@@ -1,0 +1,82 @@
+@import "generics.css";
+
+body {
+    position: relative;
+    align-items: center;
+}
+.search {
+    margin-top: 100px;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+}
+.search h1 {
+    text-align: center;
+    font-size: 24pt;
+    margin-bottom: 30px;
+}
+#input {
+    background: var(--input-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+    padding: 2px 5px;
+    height: 30px;
+    width: 50%;
+    margin-right: 5px;
+    font-size: 14pt;
+}
+#button {
+    background: var(--input-color);
+    border: 1px transparent;
+    border-radius: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 1px 1px 5px gray;
+    height: 30px;
+}
+#button:hover {
+    border-color: visible black;
+}
+.fa-search {
+    font-size: 1.5rem;
+}
+
+.resultados {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+}
+.resultados a{
+    gap: 20px;
+    padding: 10px 0;
+}
+#avatar{
+    width: 100%;
+    max-width: 70px;
+    border-radius: 50%;
+}
+#name {
+    font-size: 1.2rem;
+}
+
+#message {
+    width: auto;
+    max-width: 300px;
+    padding: 25px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    transition: 2s;
+    overflow-x: hidden;
+    visibility: hidden;
+
+}
+#message.ativo {
+    left: 15px;
+    overflow-x: auto;
+    visibility: visible;
+}

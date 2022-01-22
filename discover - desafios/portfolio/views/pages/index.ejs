@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body class="flex">
+
+    <!--Div que exibe na tela a mensagem de alerta.-->
+    <div id="message" class="box-color"></div>
+    
+    <!--Botão de tema.-->
+    <%- include('../partials/buttonTheme'); %>
+
+    <!--Caixa de Pesquisa-->
+    <Section class="search box-color">
+
+        <h1>
+            Pesquise um perfil do GitHub
+            <i class="fab fa-github"></i>
+        </h1>
+        
+        <div class="flex-center">
+            <input id="input" type="text">
+            <button id="button">
+                <i id="icon-search" class="fas fa-search"></i>
+            </button>
+        </div>
+
+    </Section>
+
+    <!--Caixa que exibe na tela o resultado da pesquisa -->
+    <section class="resultados box-color">
+
+        <a id="linkPerfil" href="profile" class=" flex-center">
+            <div>
+                <img id="avatar" src="" alt="">
+            </div>
+            <p id="name"></p>
+        </a>
+        
+    </section>
+
+    <script type="module"  src="js/main.js"></script>
+</body>
+</html>

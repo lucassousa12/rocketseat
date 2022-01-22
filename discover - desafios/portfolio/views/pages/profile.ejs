@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+<body>
+
+    <!--Botão de tema-->
+    <%- include('../partials/buttonTheme'); %>
+    
+    <!-- =========SIDEBAR LATERAL ==========-->
+    <header class="sidebar flex">
+        <!--Profile-->
+        <section class="profile box-color p-box-size" >
+            <img id="profile-avatar" class="avatar">
+            <p id="name"></p>
+            <p id="bio"></p>
+            <button id="btn-sair">
+                <i class="fas fa-sign-out-alt"></i>
+                Sair
+            </button>
+        </section>
+
+        <!--Informations-->
+        <section class="allInformations box-color p-box-size">
+        </section>
+
+        <!--Tecnologes-->
+        <section class="tecnologias box-color p-box-size ">
+            <h1 class="title">Tecnologias</h1>
+            <div>
+                <p class="flex-center">JAVASCRIPT</p>
+                <p class="flex-center">GIT</p>
+                <p class="flex-center">CSS</p>
+                <p class="flex-center">REACTJS</p>
+                <p class="flex-center">GITHUB</p>
+                <p class="flex-center">ELIXIR</p>
+                <p class="flex-center">NODEJS</p>
+                <p class="flex-center">HTML</p>
+                <p class="flex-center">REACTNATIVE</p>
+            </div>
+        </section>
+
+        <!--Experience-->
+        <section class="experience box-color p-box-size">
+            <h1 class="title">Experiências</h1>
+            <ul>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - atualmente</p>
+                    <p>Community Experience</p>
+                </li>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - atualmente</p>
+                    <p>Community Experience</p>
+                </li>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - atualmente</p>
+                    <p>Community Experience</p>
+                </li>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - atualmente</p>
+                    <p>Community Experience</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--Education-->
+        <section class="education box-color p-box-size experience">
+            <h1 class="title">Experiências</h1>
+            <ul>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - 2022</p>
+                    <p>Experts Club</p>
+                </li>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - 2022</p>
+                    <p>Trilha Higher</p>
+                </li>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - 2022</p>
+                    <p>Ignite</p>
+                </li>
+                <li>
+                    <p style="font-size: 14pt;">Rocketseat</p>
+                    <p>2019 - 2022</p>
+                    <p>Discover</p>
+                </li>
+            </ul>
+        </section>
+
+    </header>
+
+    <!-- ========= MAIN ==========-->
+    <main>
+
+        <!--Projects-->
+        <section class="my-projects">
+            <header class="projects-header box-color title">
+                My Projects
+            </header>
+            <!--Os repositórios são adicionados através de javaScript e ficam logo abaixo-->
+        </section>
+
+        <!--Posts-->
+        <section class="recent-posts">
+
+            <div class="post-header box-color  title">
+                Recents posts
+            </div>
+
+            <a href="#">
+                <div class="post box-color flex">
+                    <img id="post-avatar" class="avatar" src="" alt="">
+                    <div class="space-between flex-column">
+                        <div>
+                            <p style="font-size:14pt;">
+                                Erro adb devices no Genymotion e Android Studio (React Native)
+                            </p>
+                            <p style="font-size:10pt;">
+                                2 anos atrás
+                            </p>
+                        </div>
+                        <div>
+                            <p style="font-size:12pt;">
+                                Erro adb devices no Genymotion e Android Studio (React Native)
+                            </p>
+                            <div class="space-between" style="font-size: 10pt;">
+                                <p>#React-Native</p>
+                                <p>#gitignore</p>
+                                <p>#gitignore</p>
+                                <p>#gitignore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+    
+    <!-- ========= FOOTER ==========-->
+    <footer>
+        Desafio Portfolio da Rocketseat - Feito por Lucas Sousa
+    </footer>
+   
+    <script type="" src="../js/profile.js"></script>
+</body>
+</html>
