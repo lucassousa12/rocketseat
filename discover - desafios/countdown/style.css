@@ -1,0 +1,201 @@
+/* Base and Gererics ===========================================*/
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body ===========================================*/
+body {
+    position: relative;
+}
+
+/* Main ===========================================*/
+main {
+    height: 120vh;
+    background: url(./assets/top-image.svg) no-repeat top , url(./assets/bottom-image.svg) no-repeat bottom ;
+    background-size: contain;
+    transition: all 0.5s ease-in-out;
+}
+main.opacity {
+    opacity: 0.3;
+}
+main img {
+    width: 100%;
+    height: 100%;
+    max-width: 607px;
+    max-height: 435px;
+}
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 3.75rem 0 7.5rem;
+    white-space: nowrap;
+}
+main div {
+    flex-direction: column;
+    text-align: center;
+}
+main h1 {
+    font-size: 2.25rem;
+    color: var(--purple);
+    letter-spacing: 0.21rem;
+    padding: 30px 0 20px;
+}
+main ul {
+    display: flex;
+    list-style: none;
+}
+main ul li {
+    width: 100%;
+    text-align: center;
+}
+main ul p{
+    font-size: 0.875rem;
+    color: var(--light-grey);
+}
+.timer{
+    font-size: 4.5rem;
+    color: var(--black);
+    position: relative;
+}
+.point:after{
+    content: ":";
+    position: absolute;
+    top: -10px;
+    right: -30px;
+}
+main p {
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+main button {
+    font-size: 1rem;
+    padding: 0.625rem 1.875rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background: var(--purple);
+    margin-top: 30px;
+}
+main button:hover {
+    color: var(--purple);
+    background: transparent;
+    border-color: var(--purple);
+    cursor: pointer;
+}
+
+/* Formulário ===========================================*/
+#form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    display: none;
+}
+#form.ativo {
+    display: block;
+}
+#form fieldset {
+    width: 100%;
+    min-width: 400px;
+    height: 400px;
+    padding: 20% 10%;
+    border: none;
+    background: white;
+    box-shadow: 4px 5px 10px rgb(177, 177, 177);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--purple);
+    margin-bottom: 40px;
+}
+
+/* Inputs e Labels */
+.label-float {
+    position: relative;
+    width: 100%;
+}
+.label-float input {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid var(--text-color);
+    outline: none;
+}
+
+.label-float input:focus {
+    border-color: var(--purple);
+}
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: .8rem;
+    top: -15px;
+    color: var(--purple)
+}
+
+.label-float label {
+    position: absolute;
+    pointer-events: none;
+    color: var(--text-color);
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    transition: all .5s ease-in-out;
+}
+/* Botão de Enviar */
+#submit{
+    width: 60%;
+    padding: 5px 0;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: var(--purple);
+}
+#submit:hover {
+    color: var(--purple);
+    background: transparent;
+    border-color: var(--purple);
+    cursor: pointer;
+}
+/* Botão de Fechar */
+#fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+#btn-fechar, #btn-fechar:after {
+    width: 24px;
+    height: 3px;
+    transform: rotate(45deg);
+    background: var(--purple);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#btn-fechar:after {
+    content: "";
+    display: block;
+    transform: rotate(-90deg);
+}
