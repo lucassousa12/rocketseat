@@ -1,0 +1,88 @@
+/* Base e Genéricos =====================*/
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    --purple-shadow: #695d75;
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+.flex-center {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content =====================*/
+body {
+    background: var(--body-bg-color);
+    color: var(--purple)
+}
+main {
+    height: 100vh;
+    padding: 25px;
+}
+#user-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    margin-bottom: 10px;   
+}
+#user-img img{
+    width: 190px;
+    height: 190px;  
+    border-radius: 50%;
+}
+#user-especial-link {
+    display: block;
+    width: 140px;
+    margin-bottom: 30px;
+}
+.user-links a { 
+    display: block;
+    text-align: center;
+    align-self:center;
+    height:50px;
+    line-height: 50px;
+    max-width: 326px;
+    margin-bottom: 15px;
+    border: 1px solid var(--purple); 
+    font-weight: 500;
+}
+.user-links a:hover {
+    background-color: var(--purple);
+    box-shadow: 1px 1px 3px var(--purple-shadow);
+    color: white;
+}
+
+.icons {
+    max-width: 236px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.icons a{
+    width: 40px;
+    height: 40px;    
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+.icons a:hover {
+    border-color: var(--purple);
+    box-shadow: 1px 1px 3px var(--purple-shadow);
+}
+.icons a:hover > img {
+    width: 30px;
+}
+
