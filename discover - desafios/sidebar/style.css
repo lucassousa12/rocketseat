@@ -1,0 +1,165 @@
+/* Base e Genéricos =======================*/
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+    --sidebar-width: 0%;
+    --width-hidden: 0;
+    --visibility: hidden;
+}
+:root.ativo {
+    --sidebar-width: 100%;
+    --width-hidden: 100%;
+    --visibility: visible;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+a:hover {
+    opacity: .5;
+}
+
+/* Faz os elementos ficarem escondidos ======================*/
+.content-hidden {
+    width: var(--width-hidden);
+    visibility: var(--visibility);
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    display: flex;
+    color: var(--text-color);
+}
+
+main {
+    width: 100%;
+    padding: 30px 50px;
+    font-size: 2rem;
+}
+
+/*Sidebar ======================*/
+#sidebar {
+    width: var(--sidebar-width);
+    max-width: 250px;
+    min-width: 78px;
+    height: 100vh;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s ease-in-out;
+}
+#sidebar ul {
+    padding: 26px 14px 0;
+    width: 100%;
+}
+#sidebar ul li {
+    display: flex;
+    justify-content: center;
+}
+
+/*Botão de Menu ======================*/
+#menu {
+    margin-bottom: 26px;
+    padding-left: 5px;
+
+}
+#menu button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*Barra de pesquisa ======================*/
+#search {
+    position: relative;
+    margin-bottom: 21px;
+}
+#search input {
+    width: 100%;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--light-green);
+    outline: none;
+}
+#search img {
+    position: absolute;
+    position: absolute;
+    left: 13px;
+    top: 12px;
+    cursor: pointer;
+}
+
+/*Opções do Menu ======================*/
+.menu-op a {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+
+}
+.menu-op a:hover {
+    border-radius: 5px 5px 0 0;
+    background-color: var(--light-green);
+    border-color: var(--text-color);
+}
+.menu-op a img {
+    margin-right: 10px;
+}
+
+/* Conta do usuário e botão de sair ======================*/
+#menu-inferior {
+    width: 100%;
+    padding: 5px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green);
+}
+#user {
+    display: flex;
+}
+#user-foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+#menu-inferior div {
+    position: relative;
+}
+#menu-inferior div a:first-child {
+    font-size: 15px;
+    white-space: nowrap;
+}
+#menu-inferior div a:last-child {
+    position: absolute;
+    font-size: 12px;
+    top: 20px;
+    left: 0;
+}
+#menu-inferior button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

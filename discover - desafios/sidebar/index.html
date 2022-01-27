@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte Poppins / Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar</title>
+</head>
+<body>
+    <!--Sidebar ================================-->  
+    <header id="sidebar">
+        <ul>
+            <!-- Botão de Menu e Logo ===================-->
+            <li id="menu">
+                <div class="content-hidden">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <button>
+                    <img src="images/menu.svg">
+                </button>
+            </li>
+
+            <!-- Barra de Pesquisa ======================-->  
+            <li id="search">
+                <input type="search">
+                <img src="images/search.svg">
+            </li>
+
+            <!-- Opções do Menu ==========================-->  
+            <li class="menu-op">
+                <a href="#">
+                    <img src="images/grid.svg">
+                    <p class="content-hidden">Dashboard</p>
+                </a>
+            </li>
+
+            <li class="menu-op">
+                <a href="#">
+                    <img src="images/pet.svg">
+                    <p class="content-hidden">pats</p>
+                </a>
+            </li>
+
+            <li class="menu-op">
+                <a href="#">
+                    <img src="images/user.svg">
+                    <p class="content-hidden">clientes</p>
+                </a>
+            </li>
+
+            <li class="menu-op">
+                <a href="#">
+                    <img src="images/vet.svg">
+                    <p class="content-hidden">Vets</p>
+                </a>
+            </li>
+
+            <li class="menu-op">
+                <a href="#">
+                    <img src="images/settings.svg">
+                    <p class="content-hidden">Ajustes</p>
+                </a>
+            </li>
+        </ul>
+
+        <div id="menu-inferior">
+            <div id="user" class="content-hidden">
+                <a href="#">
+                    <img id="user-foto" src="images/photo.jpg" alt="Foto do usuário">
+                </a>
+                <div>
+                    <a href="#">Eleanor Pena</a>
+                    <a href="#">Veterinária</a>
+                </div>
+            </div>
+            <button>
+                <img src="images/log-out.svg" alt="Botão de sair">
+            </button>
+        </div>
+    </header>
+    
+    <!--Dashboard ================================-->  
+    <main>Dashboard</main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
