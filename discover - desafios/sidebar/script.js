@@ -10,7 +10,8 @@ function toggleMenu() {
 btnMenu.addEventListener('click', toggleMenu)
 
 searchBtn.addEventListener('click', () => {
-    if(sidebar.classList.contains('ativo')){
+
+    if(root.classList.contains('ativo')){
         alert('Pesquisando')
     }   else {
         toggleMenu() 
