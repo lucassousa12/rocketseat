@@ -1,0 +1,252 @@
+/* ======  GERAIS  ==================*/
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monrope', sans-serif;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--backgrond);
+}
+
+#all {
+    background: url("./assets/blur-1.png") no-repeat bottom left, url("./assets/blur-2.png") no-repeat top right;
+}
+
+/* ======  HEADER  ==================*/
+#logo-mobile {
+    display: none;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+header {
+    padding-top: 50px;
+    height: 3.125rem;
+}
+
+#nav {
+    margin: 0 auto;
+    padding: 0 25px;
+    max-width: 57.375rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#menu {
+    display: flex;
+    gap: 2rem;
+}
+
+#menu li a {
+    color: var(--text-color);
+    font-size: 14px;
+    padding: .3rem;
+}
+
+#menu li a:hover {
+    color: var(--button);
+    border-bottom: 1px solid var(--button);
+}
+
+.btn-get-coffee {
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid var(--button);
+    border-radius: 6px;
+    padding: 0.688rem 1.875rem;
+    font-size: 11px;
+    font-weight: bold;
+}   
+
+.btn-get-coffee:hover {
+    color: var(--button);
+    border-color: var(--button);
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-get-coffee.with-arrow {
+    display: none;
+}
+
+/* ======  MAIN  ==================*/
+
+#slogan {
+    display: none;
+}
+
+main {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#title {
+    padding-top: 100px;
+    color: var(--text-color);
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -3px;
+}
+
+#title span {
+    color: black;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+main img{
+    max-width: 100%;
+}
+
+@media (max-width: 770px) {
+    
+    #all {
+        background: url("./assets/blur-1.png") no-repeat bottom left;
+    }
+    /* ======  HEADER  ==================*/
+
+    #logo-desktop {
+        display: none;
+    }
+    
+    #logo-mobile {
+        display: block;
+    }
+
+    .btn-get-coffee.without-arrow {
+        display: none;
+    }
+
+    header {
+        padding-top: 37px;
+        height: calc(58px + 37px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #menu {
+        background-color: black;
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 95px;
+        left: 0;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        transition:  0.6s;
+        overflow-y: hidden;
+    }
+    
+    #menu li {
+        height: 56px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+    }
+    #menu li a {
+        font-size: 18px;
+        height: 100%; 
+        width: 100%;  
+        padding-left: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    #menu li a:hover {
+        border-bottom: 0px;
+        border-left: 2px solid var(--button);
+        font-weight: 700
+    }
+
+    #nav.active #menu {
+        visibility: visible; 
+        height: calc(100vh - 95px);
+    }
+
+    #btn-mobile {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    #btn-mobile-open {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        visibility: visible;
+    }
+    
+    #btn-mobile-close {
+        visibility: hidden;
+    }
+
+    #nav.active #btn-mobile-open {
+        visibility: hidden;
+    }
+    
+    #nav.active #btn-mobile-close {
+        visibility: visible;
+    }
+    
+    /* ======  MAIN  ==================*/
+
+    #slogan {
+        display: block;
+        color: var(--text-color);
+        font-size: 30px;
+        letter-spacing: 2%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .btn-get-coffee.with-arrow {
+        padding: 0.625rem 2.5rem 0.625rem 1.875rem;
+        display: block;
+        position: relative;
+    
+    }   
+    
+    .btn-get-coffee.with-arrow img {
+        position: absolute;
+        top: 9px;
+        right: 20px;
+    }
+
+    #title {
+        padding:  50px 0 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    #slogan {
+        margin-bottom: 88px;
+    }
+    .btn-get-coffee.with-arrow {
+        margin-bottom: 98px;
+    }   
+    #title {
+        padding:  50px 0 25px;
+    }
+}
