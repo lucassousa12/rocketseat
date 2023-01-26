@@ -4,10 +4,133 @@
     --gray: #828799;
     --page-background: #f9fbfc;
   }
-  
+
 * {
     margin: 0;  
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    height: 100vh;
+    background-image: linear-gradient(var(--blue) 50%, var(--page-background) 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main h1 {
+    color: var(--page-background);
+    font-weight: 700;
+    font-size: 48px;
+    padding: 100px 0 20px 0;
+}
+
+.description {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 65px;   
+}
+
+.cards {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px; 
+  
+}
+
+.card {
+    max-width: 355px;
+    width: 100%;
+    height: 470px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-plan {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e2338;
+    padding-bottom: 20px;
+}
+
+.basic {
+    padding: 0 30px 35px 30px;
+    height: 490px;
+    background-image: linear-gradient(var(--yellow) 76px, #FFFFFF 76px);
+}
+
+.card-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 76px;
+    margin-bottom: 20px;
+}
+
+.card-popular p {
+    font-size: 20px;
+    padding: 0;
+    color: var(--blue);
+}
+
+.card-popular span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 8px 24px;
+    border-radius: 40px;
+    background-color: var(--blue);
+
+}
+
+.card-value strong span{
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.card-value span {
+    color: var(--gray);
+}
+
+.card-description {
+    font-size: 14px;
+    color: var(--gray);
+    padding-bottom: 41px;
+}
+
+.card-atributes p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray);
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.card-button {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+}
+
+.card-button.basic-button {
+    background-color: var(--blue);
+    color: #FFFFFF;
 }
