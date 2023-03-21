@@ -12,3 +12,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'Roboto', sans-serif;
 }
+
+main {
+    display: grid;
+    
+}
