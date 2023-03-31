@@ -15,29 +15,37 @@
 </head>
 <body>
 
-    <header class="menu">
+    <header id="header">
 
-        <nav class="navbar">
+        <div class="header-container">
 
             <a href="#">
                 <img class="manu-logo" src="images/logo.svg" alt="Logo The Blog">
             </a>
 
-            <ul>
-                <li id="navbar-selected"><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-
-            <form class="menu-search">
-                <input type="text" placeholder="Buscar">
-                <button>
+            <nav class="nav">
+                <ul id="menu" role="menu">
+                    <li id="menu-selected">
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <form id="menu-search">
+                <input type="text" placeholder="Buscar" id="menu-search-input">
+                <button id="menu-btn-search">
                     <img src="images/search.svg" alt="Botão de Pesquisa">
                 </button>
             </form>
+            
+            <button aria-label="Abrir Menu" id="menu-button-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
 
-        </nav>
+        </div>
 
     </header>
 
