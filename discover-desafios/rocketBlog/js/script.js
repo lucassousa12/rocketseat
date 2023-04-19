@@ -37,12 +37,7 @@ function toggleSearch(event) {
     if (active === false) {
         menuSearch.classList.toggle('active');
    }
-
-   if (event.type == 'touchstart') {
-    event.preventDefault();
-   }
     
 }
 
 btnSearch.addEventListener('click', toggleSearch);
-btnSearch.addEventListener('touchstart', toggleSearch);
