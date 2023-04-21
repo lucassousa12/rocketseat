@@ -1,5 +1,26 @@
+:root {
+	--color-gray-100: #f2f2f2;
+	--color-gray-200: #d9d9d9;
+	--color-gray-300: #7f7f7f;
+	--color-gray-400: #333333;
+	--color-gray-500: #262626;
+	--color-gray-600: #191919;
+	--color-gray-700: #0c0c0c;
+	--color-purple: #8284fa;
+	--color-purpledark: #5e60ce;
+	--color-blue: #4ea8de;
+	--color-blue-dark: #1d6e9f;
+	--color-danger: #e25858;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    background-color: #454545;
+    font-family: "Inter", sans-serif;
 }
