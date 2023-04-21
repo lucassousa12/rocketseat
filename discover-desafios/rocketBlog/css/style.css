@@ -14,7 +14,7 @@
   font-family: "Roboto", "Poppins", sans-serif;
 } 
 
-/*     MENU PRINCIPAL             */
+/*  ===============   MENU PRINCIPAL   ===============*/
 #header {
   background-color: #290742;
 
@@ -31,6 +31,11 @@
   margin: 0 auto;
 
   padding: 64px 2rem 1rem;
+}
+
+.menu-logo {
+  min-width: 90px;
+  width: 100%;
 }
 
 /*      MENU - Links         */
@@ -107,7 +112,7 @@
 }
 
 
-/* BODY - Post Principal */
+/*  ===============   POST DE DESTAQUE   ===============*/
 
 .mainPost {
   background-color: #290742;
@@ -125,29 +130,33 @@
   margin: 0 auto;
   
 }
-
-.mainPost-content-text h1 {
-  color: #9e6dc2;
-  font-size: min(36px, 2.9vw);
-  font-family: 'Poppins';
-  font-weight: 700;
-  margin-bottom: 1rem;
-  padding: 0 1rem 0 0;
+.mainPost-content-text {
+  width: 50%;
 }
 
 .mainPost-content-text a {
   text-decoration: none;
 }
 
-.mainPost-content-text h1:hover {
+.mainPost-content-text a h1 {
+  color: #9e6dc2;
+  font-size: 2.25rem;
+  font-family: 'Poppins';
+  font-weight: 700;
+  line-height: 3.375rem;
+  margin-bottom: 1rem;
+}
+
+.mainPost-content-text a h1:hover {
   opacity: 0.7;
 }
 
 .mainPost-content-text P {
-  font-size: min(18px, 1.5vw);
+  font-size: 1.125rem;
+  line-height: 1.688rem;
   color: #fff;
   margin-bottom: 1.5rem;
-  padding: 0 24% 0 0;
+  padding-right: 24%;
 }
 
 .mainPost-content-text button  {
@@ -156,7 +165,7 @@
   display: flex;
   gap: .5rem;
   width: 7rem;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #9e6dc2;
   cursor: pointer;
@@ -164,20 +173,27 @@
 }
 
 .mainPost-content-text button img {
-  width: 24px;
+  width: 1.5rem;
 }
 
 .mainPost-content-text button:hover {
   opacity: 0.7;
 }
-.mainPost-content a {
+
+.mainPost-image {
+  width: 50%;
+}
+
+.mainPost-image a {
   display: contents;
 }
 
-.mainPost-content a img {
-  width: 50%;
+.mainPost-image a img {
+  width: 100%;
   height: fit-content;
 }
+
+/*  ===========  POSTS COMPLEMENTARES   ===============*/
 
 .posts {
   max-width: calc(1200px + 4rem);
@@ -242,7 +258,15 @@
 .post5 { grid-area: post5; }
 .post6 { grid-area: post6; }
 
+
+
+
+/*  ===============   MOBILE   ===============*/
 @media (max-width: 760px) {
+  html {
+    font-size: 87.5%;
+  }
+
   .header-container {
     padding: 2rem 1rem 1rem;
     gap: .5rem;
@@ -294,7 +318,7 @@
   /* MENU - Links Mobile */
   .nav {  
     position: absolute;
-    top: 88px;
+    top: 54px;
     left: 0;
     width: 100vw;
     
@@ -330,7 +354,7 @@
 
   #header.active .nav {
     visibility: visible;
-    height: calc(100vh - 88px);
+    height: calc(100vh - 54px);
   }
 
   /*  MENU - Caixa de Pesquisa Mobile */
@@ -359,4 +383,38 @@
       visibility: visible;
   }
 
+  .mainPost-content {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+  }
+  .mainPost-image {
+    width: 100%;
+  }
+  
+  .mainPost-content-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .mainPost-content-text P {
+    padding: 0;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .post2e3 {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 70%;
+  }
 }
