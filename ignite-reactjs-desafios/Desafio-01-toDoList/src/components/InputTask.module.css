@@ -38,4 +38,10 @@
 
     background: var(--color-blue-dark);
     color: var(--color-gray-100);
+
+    cursor: pointer;
+}
+
+.buttonForm:hover {
+    opacity: 0.8;
 }

@@ -1,0 +1,77 @@
+.taskCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--color-gray-500);
+}
+
+.taskNotCheck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--color-blue);
+    border-radius: 100%;
+    cursor: pointer;
+    background: transparent;
+
+    transition: .3s;
+}
+
+.taskChecked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    background: var(--color-purple);
+
+    transition: .3s;
+}
+
+.taskChecked svg {
+    visibility: visible;
+}
+
+.taskCheck label input {
+    opacity: 0;
+    width: 0;
+}
+
+.taskCheck  svg {
+    color: var(--color-gray-100);
+    visibility: hidden;
+}
+
+.taskCheck input:checked + svg {
+    visibility: visible;
+}
+
+
+.taskName {
+    width: 100%;
+    word-break: break-all;
+    color: var(--color-gray-100);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+
+/* Botão de Deletar Task */
+.deleteTask {
+    flex: end;
+    background: transparent;
+    color: var(--color-gray-300);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.deleteTask:hover {
+    color: var(--color-blue);
+}
