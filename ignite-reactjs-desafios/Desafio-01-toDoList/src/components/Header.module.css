@@ -7,3 +7,7 @@
     align-items: center;
     justify-content: center;
 }
+
+.header img {
+    margin-top: -8px;
+}

@@ -21,6 +21,6 @@
 }
 
 html, body {
-    background-color: #454545;
+    background-color: var(--color-gray-600);
     font-family: "Inter", sans-serif;
 }
